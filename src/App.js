@@ -46,7 +46,7 @@ export default function App() {
         <form className="flex items-center justify-center mt-10" onSubmit={handleSubmit}>
           <div className="relative group">
             <div className="absolute -inset-1.5 bg-gradient-to-r from-red-600 to-yellow-500 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-200"></div>
-          <input type="text" name="text" placeholder="Enter task" className="no-outline relative py-2 px-2 rounded-lg bg-gray-700 text-white tracking-wide group-hover:text-purple-200 transition duration -200" autoComplete="off"
+          <input type="text" required name="text" placeholder="Enter task" className="no-outline relative py-2 px-2 rounded-lg bg-gray-700 text-white tracking-wide group-hover:text-purple-200 transition duration -200" autoComplete="off"
           value = {text}
           onChange={(e) => setText(e.target.value)}
           />
